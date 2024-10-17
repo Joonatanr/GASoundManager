@@ -36,6 +36,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Icons\pause_button.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Icons\play_button.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Icons\stop_button.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="images.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

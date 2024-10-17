@@ -29,7 +29,7 @@ namespace GASoundManagerApp
 #endif
 
             /* 1. Lets get a list of directories here first... */
-            string [] dirs = Directory.GetDirectories("audio_clips");
+            string[] dirs = Directory.GetDirectories("audio_clips");
             tabControl1.TabPages.Clear();
 
             foreach (string dir in dirs)
@@ -66,7 +66,7 @@ namespace GASoundManagerApp
 
                     tabControl1.TabPages.Add(myTabPage);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     /* TODO : Report error!!! */
                 }
@@ -149,6 +149,21 @@ namespace GASoundManagerApp
         private void DebugPrint(string str)
         {
             richTextBoxDebug.AppendText(str + Environment.NewLine);
+        }
+
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
+            wplayer.controls.play();
+        }
+
+        private void buttonPause_Click(object sender, EventArgs e)
+        {
+            wplayer.controls.pause();
+        }
+
+        private void buttonStop_Click(object sender, EventArgs e)
+        {
+            wplayer.controls.stop();
         }
     }
 }
