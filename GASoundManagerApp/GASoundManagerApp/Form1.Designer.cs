@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            buttonPlay = new Button();
+            SuspendLayout();
+            // 
+            // buttonPlay
+            // 
+            buttonPlay.Location = new Point(51, 52);
+            buttonPlay.Name = "buttonPlay";
+            buttonPlay.Size = new Size(126, 91);
+            buttonPlay.TabIndex = 0;
+            buttonPlay.Text = "Play";
+            buttonPlay.UseVisualStyleBackColor = true;
+            buttonPlay.Click += buttonPlay_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(buttonPlay);
+            Name = "Form1";
+            Text = "GA Estonian Evening Audio Player";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button buttonPlay;
     }
 }
