@@ -43,12 +43,14 @@
             userControlAudioButtonList1 = new UserControlAudioButtonList();
             tabPage2 = new TabPage();
             richTextBoxDebug = new RichTextBox();
+            pictureBox1 = new PictureBox();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)trackBarVolume).BeginInit();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -100,9 +102,9 @@
             groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             groupBox2.Controls.Add(button4);
             groupBox2.Controls.Add(trackBarVolume);
-            groupBox2.Location = new Point(566, 12);
+            groupBox2.Location = new Point(566, 36);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(222, 430);
+            groupBox2.Size = new Size(222, 406);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             groupBox2.Text = "Volume";
@@ -112,7 +114,7 @@
             button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 186);
             button4.ForeColor = Color.Red;
-            button4.Location = new Point(76, 338);
+            button4.Location = new Point(76, 314);
             button4.Name = "button4";
             button4.Size = new Size(140, 86);
             button4.TabIndex = 1;
@@ -127,7 +129,7 @@
             trackBarVolume.Maximum = 100;
             trackBarVolume.Name = "trackBarVolume";
             trackBarVolume.Orientation = Orientation.Vertical;
-            trackBarVolume.Size = new Size(45, 402);
+            trackBarVolume.Size = new Size(45, 378);
             trackBarVolume.TabIndex = 0;
             trackBarVolume.TickFrequency = 2;
             trackBarVolume.Value = 100;
@@ -182,22 +184,34 @@
             richTextBoxDebug.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             richTextBoxDebug.Location = new Point(12, 448);
             richTextBoxDebug.Name = "richTextBoxDebug";
-            richTextBoxDebug.Size = new Size(776, 125);
+            richTextBoxDebug.Size = new Size(548, 125);
             richTextBoxDebug.TabIndex = 6;
             richTextBoxDebug.Text = "";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.Image = Properties.Resources.images;
+            pictureBox1.Location = new Point(566, 448);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(222, 125);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 585);
+            Controls.Add(pictureBox1);
             Controls.Add(richTextBoxDebug);
             Controls.Add(tabControl1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             MinimumSize = new Size(420, 420);
             Name = "Form1";
-            Text = "GA Estonian Evening Audio Player";
+            Text = "GA Estonian Evening Audio Player - 2024";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
@@ -206,6 +220,7 @@
             ((System.ComponentModel.ISupportInitialize)trackBarVolume).EndInit();
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -223,5 +238,6 @@
         private TabPage tabPage2;
         private UserControlAudioButtonList userControlAudioButtonList1;
         private RichTextBox richTextBoxDebug;
+        private PictureBox pictureBox1;
     }
 }
