@@ -65,7 +65,7 @@
             groupBox1.Controls.Add(labelTrackName);
             groupBox1.Controls.Add(labelPosition);
             groupBox1.Controls.Add(trackBar1);
-            groupBox1.Location = new Point(14, 417);
+            groupBox1.Location = new Point(14, 455);
             groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(3, 4, 3, 4);
@@ -148,7 +148,7 @@
             groupBox2.Margin = new Padding(3, 4, 3, 4);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(3, 4, 3, 4);
-            groupBox2.Size = new Size(254, 541);
+            groupBox2.Size = new Size(254, 579);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             groupBox2.Text = "Volume";
@@ -158,7 +158,7 @@
             button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 186);
             button4.ForeColor = Color.Red;
-            button4.Location = new Point(87, 419);
+            button4.Location = new Point(87, 457);
             button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
             button4.Size = new Size(160, 115);
@@ -175,7 +175,7 @@
             trackBarVolume.Maximum = 100;
             trackBarVolume.Name = "trackBarVolume";
             trackBarVolume.Orientation = Orientation.Vertical;
-            trackBarVolume.Size = new Size(56, 504);
+            trackBarVolume.Size = new Size(56, 542);
             trackBarVolume.TabIndex = 0;
             trackBarVolume.TickFrequency = 2;
             trackBarVolume.Value = 100;
@@ -194,7 +194,7 @@
             tabControl1.Margin = new Padding(3, 4, 3, 4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(626, 393);
+            tabControl1.Size = new Size(626, 431);
             tabControl1.TabIndex = 5;
             // 
             // tabPage1
@@ -205,7 +205,7 @@
             tabPage1.Margin = new Padding(3, 4, 3, 4);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3, 4, 3, 4);
-            tabPage1.Size = new Size(618, 360);
+            tabPage1.Size = new Size(618, 398);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Test";
             // 
@@ -224,7 +224,7 @@
             tabPage2.Margin = new Padding(3, 4, 3, 4);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3, 4, 3, 4);
-            tabPage2.Size = new Size(618, 360);
+            tabPage2.Size = new Size(618, 398);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
@@ -232,7 +232,7 @@
             // richTextBoxDebug
             // 
             richTextBoxDebug.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            richTextBoxDebug.Location = new Point(14, 597);
+            richTextBoxDebug.Location = new Point(14, 635);
             richTextBoxDebug.Margin = new Padding(3, 4, 3, 4);
             richTextBoxDebug.Name = "richTextBoxDebug";
             richTextBoxDebug.Size = new Size(626, 165);
@@ -244,7 +244,7 @@
             pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Image = Properties.Resources.images;
-            pictureBox1.Location = new Point(647, 597);
+            pictureBox1.Location = new Point(647, 635);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(253, 166);
@@ -256,14 +256,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 780);
+            ClientSize = new Size(914, 818);
             Controls.Add(pictureBox1);
             Controls.Add(richTextBoxDebug);
             Controls.Add(tabControl1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Margin = new Padding(3, 4, 3, 4);
-            MinimumSize = new Size(477, 544);
+            MinimumSize = new Size(932, 865);
             Name = "Form1";
             Text = "GA Estonian Evening Audio Player - 2024";
             groupBox1.ResumeLayout(false);

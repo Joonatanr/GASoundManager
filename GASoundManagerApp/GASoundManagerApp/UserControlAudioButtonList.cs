@@ -45,6 +45,7 @@ namespace GASoundManagerApp
 
             /* TODO : Make this as dynamic as possible. */
             int yLoc = 20;
+            int xLoc = 10;
 
             foreach (string filePath in audioFiles)
             {
@@ -52,16 +53,24 @@ namespace GASoundManagerApp
                 {
                     string fileName = Path.GetFileName(filePath);
                     myAudioFilesDictionary.Add(fileName, filePath);
-                    
+
                     Button myButton = new Button();
                     myButton.Text = fileName;
                     myButton.Click += MyButton_Click;
                     myButton.Size = new Size(150, 60);
-                    myButton.Location = new Point(10, yLoc);
+
+                    myButton.Location = new Point(xLoc, yLoc);
                     myButton.BackColor = Color.Beige;
 
                     yLoc += 10;
                     yLoc += myButton.Height;
+
+                    if ((yLoc + myButton.Height) > this.Height)
+                    {
+                        yLoc = 20;
+                        xLoc += 10;
+                        xLoc += myButton.Width;
+                    }
 
                     AudioButtonsGroupBox.Controls.Add(myButton);
                 }
