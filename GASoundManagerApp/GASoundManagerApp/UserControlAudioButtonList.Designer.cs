@@ -36,10 +36,11 @@
             // AudioButtonsGroupBox
             // 
             AudioButtonsGroupBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            AudioButtonsGroupBox.AutoSize = true;
-            AudioButtonsGroupBox.Location = new Point(3, 3);
+            AudioButtonsGroupBox.Location = new Point(3, 4);
+            AudioButtonsGroupBox.Margin = new Padding(3, 4, 3, 4);
             AudioButtonsGroupBox.Name = "AudioButtonsGroupBox";
-            AudioButtonsGroupBox.Size = new Size(313, 284);
+            AudioButtonsGroupBox.Padding = new Padding(3, 4, 3, 4);
+            AudioButtonsGroupBox.Size = new Size(358, 379);
             AudioButtonsGroupBox.TabIndex = 0;
             AudioButtonsGroupBox.TabStop = false;
             AudioButtonsGroupBox.Text = "Audio Files";
@@ -49,20 +50,21 @@
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoScroll = true;
             panel1.Controls.Add(AudioButtonsGroupBox);
-            panel1.Location = new Point(3, 3);
+            panel1.Location = new Point(3, 4);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(319, 290);
+            panel1.Size = new Size(365, 387);
             panel1.TabIndex = 0;
             // 
             // UserControlAudioButtonList
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "UserControlAudioButtonList";
-            Size = new Size(325, 296);
+            Size = new Size(371, 395);
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
