@@ -68,7 +68,7 @@ namespace GASoundManagerApp
                 }
                 catch (Exception ex)
                 {
-                    /* TODO : Report error!!! */
+                    DebugPrint("Failed to parse directory " + dir + ex.Message.ToString());
                 }
             }
         }
@@ -89,7 +89,7 @@ namespace GASoundManagerApp
             }
             catch (Exception ex)
             {
-                /* TODO : Report error. */
+                DebugPrint("Failed to play audio : " + ex.Message.ToString());
             }
         }
 
