@@ -16,18 +16,6 @@ namespace GASoundManagerApp
 
             wplayer.MediaChange += Wplayer_MediaChange;
 
-#if false
-            /* Set up some test buttons as a placeholder for testing */
-
-            List<string> testAudioFiles = new List<string>();
-
-            testAudioFiles.Add("audio_clips/folder 2/MountainKing_edited2.mp3");
-            testAudioFiles.Add("audio_clips/folder 1/MorningMood_edited.mp3");
-
-            userControlAudioButtonList1.AudioFiles = testAudioFiles;
-            userControlAudioButtonList1.AudioFilePlayed = new UserControlAudioButtonList.AudioFilePlayedHandler(playAudio);
-#endif
-
             /* 1. Lets get a list of directories here first... */
             string[] dirs = Directory.GetDirectories("audio_clips");
             tabControl1.TabPages.Clear();
